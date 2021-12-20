@@ -32,8 +32,7 @@ let sum = a + b;
 ## Education 
 
 * **University:** Saint-Petersburg State University, Master degree in Sociology
-
-* **Courses:** Code Basics - HTML, CSS, JavaScript
+* **Courses:** Code Basics - [HTML](https://ru.code-basics.com/languages/html), [CSS](https://ru.code-basics.com/languages/css), [JavaScript](https://ru.code-basics.com/languages/javascript)
 
 ## Languages
 
