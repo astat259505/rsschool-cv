@@ -4,7 +4,8 @@
 
 * **Phone number:** +7 (996) 765-05-17
 * **Email:** astat259505@gmail.com
-* **GitHub:** astat259505
+* **GitHub:** [astat259505](https://github.com/astat259505)
+* **Discord:** Maxim Lizunkov (@astat259505)
 
 ## About me
 
@@ -28,11 +29,18 @@ let sum = a + b;
   return sum.toString(2);
 }
 ```
+## My projects
+
+* [Survey form](https://codepen.io/astat259505/pen/wvrMBOZ)
+* [Trubute page](https://codepen.io/astat259505/pen/bGoGGVQ)
 
 ## Education 
 
 * **University:** Saint-Petersburg State University, Master degree in Sociology
-* **Courses:** Code Basics - [HTML](https://ru.code-basics.com/languages/html), [CSS](https://ru.code-basics.com/languages/css), [JavaScript](https://ru.code-basics.com/languages/javascript)
+* **Courses:** Code Basics 
+    + [HTML](https://ru.code-basics.com/languages/html) 
+    + [CSS](https://ru.code-basics.com/languages/css) 
+    + [JavaScript](https://ru.code-basics.com/languages/javascript)
 
 ## Languages
 
