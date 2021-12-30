@@ -8,7 +8,7 @@
     --main-color-two: #0c496b;
     --title-color-one: #024165;
     --subtitle-color-one: #376885;
-    --text-color-one: #8ca8b9;
+    --text-color-one: #8097a5;
 }
 
 body {
@@ -27,7 +27,10 @@ body {
     
 }
 
-
+.nav {
+    position: relative;
+    top: 14px;
+}
 
 .nav-list {
     display: flex;
@@ -49,7 +52,9 @@ body {
 }
 
 .nav-link:hover {
-    text-decoration: underline var(--main-color-one) 3px;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
 }
 
 html {
@@ -79,14 +84,14 @@ html {
 
 .photo-space {
   position: relative;  
-  right: 117px;
-  bottom: 5px;
+  right: 67px;
+  bottom: -1px;
   
     
     
 }
 
-img {
+.avatar {
     width: 300px;
     height: auto;
     border-radius: 50%;
@@ -95,13 +100,25 @@ img {
 }
 
 .name-profession {
+    bottom: 33px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 300px;
     color: var(--title-color-one);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    position: relative;
 }
+
+.name {
+    position: relative;
+    bottom: -17px;
+}
+
+
 
 #languages {
     width: 100%;
@@ -131,6 +148,7 @@ img {
   width: 100%;
   color: var(--title-color-one);
   background-color: var(--main-color-one);
+  font-weight: 500;
     
 }
 
@@ -141,41 +159,85 @@ img {
 }
 
 .contact-item {
-    list-style: none;
-    padding: 5px 20px;
+    padding: 5px 37px;
+    list-style-type: none;
+    position: relative;
+    
 }
 
+.contact-item::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.contact-item:nth-child(1)::before  {
+    background-image: url(assets/svg/phone.svg);
+}
+
+.contact-item:nth-child(2)::before {
+    background-image: url(assets/svg/mail.svg);
+}
+
+.contact-item:nth-child(3)::before {
+    background-image: url(assets/svg/github.svg);
+}
+
+.contact-item:nth-child(4):before {
+    background-image: url(assets/svg/discord.svg);
+}
+
+.contact-item:nth-child(5):before {
+    background-image: url(assets/svg/location.svg);
+    position: absolute;
+    left: 7px;
+}
+
+
+
 .skills-item {
-    padding: 5px 20px;
+    padding: 5px 13px;
 }
 
 .languages-item {
-    padding: 5px 20px;
+    padding: 5px 13px;
 }
 
 ul li {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style-position: inside;
+    
+   
+    
+    
 }
 
 .about-me-content {
     padding: 5px 55px;
+    color: var(--text-color-one)
 }
 
 .code-content {
-    padding: 5px 55px; 
-    color: var(--text-color-one)
+    padding: 5px 1px;
+    color: var(--subtitle-color-one);
+    letter-spacing: 1px;
 }
 
 .code-task-content {
     padding: 5px 55px;
-    color: var(--subtitle-color-one)
+    color: var(--text-color-one)
 }
 
 .projects-item {
     padding: 5px 15px;
-   
+    color: var(--text-color-one)
 }
 
 .education-item {
@@ -186,13 +248,67 @@ ul li {
 
 .projects-link {
     text-decoration: none;
-    color: var(--text-color-one)
+    color: var(---text-color-one)
 }
 
 .projects-link:hover {
     color: var(--title-color-one);
     position: relative;
+    left: 3px;
+}
+
+.github-link {
+    text-decoration: none;
+    color: var(--main-color-one)
+}
+
+.github-link:hover {
+    position: relative;
+    left: 3px;
+}
+
+.courses-link {
+    text-decoration: none;
+    color: var(--text-color-one);
+}
+
+.courses-link:hover {
+    color: var(--title-color-one);
+    position: relative;
+    left: 3px;
+}
+
+section#about-me {
+    height: 213px;
+    position: relative;
+    top: 36px;
+}
+
+.github-logo {
+    width: auto;
+    height: 24px;
+    border: none;
+    position: relative;
+    top: 5px;
     left: 5px;
 }
 
+.footer-github-link {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: 15px;
+}
 
+.rsschool-logo {
+    height: 24px;
+    width: auto;
+    position: relative;
+    top: 12px;
+    right: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between ;
+}
