@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --main-color-one: #fcfcfc;
+    --main-color-two: #0c496b;
+    --title-color-one: #024165;
+    --subtitle-color-one: #376885;
+    --text-color-one: #8097a5;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    
+}
+
+.nav {
+    position: relative;
+    top: 14px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color: var(--main-color-two);
+    
+    
+}
+
+.nav-link {
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 50px;
+    transition: .3s;
+    color: var(--main-color-one)
+
+}
+
+.nav-link:hover {
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    padding: 10px;
+}
+
+
+#profile {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-color-one);
+    
+    
+}
+
+.photo-space {
+  position: relative;  
+  right: 67px;
+  bottom: -1px;
+  
+    
+    
+}
+
+.avatar {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 7px solid var(--main-color-two);
+    
+}
+
+.name-profession {
+    bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: var(--title-color-one);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    position: relative;
+}
+
+.name {
+    position: relative;
+    bottom: -17px;
+}
+
+
+
+#languages {
+    width: 100%;
+}
+.main-info {
+    display: flex;
+    flex-direction: row;
+
+    
+    
+}
+
+.left-column { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 75%;
+  background-color: var(--main-color-two);
+  color: var(--main-color-one);
+
+}
+
+.right-column {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  color: var(--title-color-one);
+  background-color: var(--main-color-one);
+  font-weight: 500;
+    
+}
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 5px 39px;
+}
+
+.contact-item {
+    padding: 5px 37px;
+    list-style-type: none;
+    position: relative;
+    
+}
+
+.contact-item::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.contact-item:nth-child(1)::before  {
+    background-image: url(assets/svg/phone.svg);
+}
+
+.contact-item:nth-child(2)::before {
+    background-image: url(assets/svg/mail.svg);
+}
+
+.contact-item:nth-child(3)::before {
+    background-image: url(assets/svg/github.svg);
+}
+
+.contact-item:nth-child(4):before {
+    background-image: url(assets/svg/discord.svg);
+}
+
+.contact-item:nth-child(5):before {
+    background-image: url(assets/svg/location.svg);
+    position: absolute;
+    left: 7px;
+}
+
+
+
+.skills-item {
+    padding: 5px 13px;
+}
+
+.languages-item {
+    padding: 5px 13px;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    
+   
+    
+    
+}
+
+.about-me-content {
+    padding: 5px 55px;
+    color: var(--text-color-one)
+}
+
+.code-content {
+    padding: 5px 1px;
+    color: var(--subtitle-color-one);
+    letter-spacing: 1px;
+}
+
+.code-task-content {
+    padding: 5px 55px;
+    color: var(--text-color-one)
+}
+
+.projects-item {
+    padding: 5px 15px;
+    color: var(--text-color-one)
+}
+
+.education-item {
+    padding: 5px 15px;
+    color: var(--text-color-one)
+    
+}
+
+.projects-link {
+    text-decoration: none;
+    color: var(---text-color-one)
+}
+
+.projects-link:hover {
+    color: var(--title-color-one);
+    position: relative;
+    left: 3px;
+}
+
+.github-link {
+    text-decoration: none;
+    color: var(--main-color-one)
+}
+
+.github-link:hover {
+    position: relative;
+    left: 3px;
+}
+
+.courses-link {
+    text-decoration: none;
+    color: var(--text-color-one);
+}
+
+.courses-link:hover {
+    color: var(--title-color-one);
+    position: relative;
+    left: 3px;
+}
+
+section#about-me {
+    height: 213px;
+    position: relative;
+    top: 36px;
+}
+
+.github-logo {
+    width: auto;
+    height: 24px;
+    border: none;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.footer-github-link {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: 15px;
+    bottom: 12px;
+}
+
+.rsschool-logo {
+    height: 24px;
+    width: auto;
+    position: relative;
+    bottom: -5px;
+    right: 20px;
+}
+
+.footer-container {
+    display: flex;
+   justify-content: space-between ;
+    height: 45px;
+}
